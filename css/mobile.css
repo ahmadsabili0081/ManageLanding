@@ -1,0 +1,470 @@
+* {
+  margin: 0px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    position: relative;
+    min-height: 100vh;
+  }
+  .container header {
+    width: 100%;
+    padding: 3% 2%;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container header.sticky {
+    position: fixed;
+    top: 0;
+    padding: 3% 2%;
+    background-color: #f25f3a;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container section.banner__manage {
+    width: 100%;
+    min-height: auto;
+    padding: 0px 10px;
+    background-position-y: -100px;
+    background-position-x: 500px;
+  }
+  .container section.banner__manage .container__banner__manage {
+    width: 100%;
+    height: auto;
+  }
+  .container section.about__manage {
+    padding: 100px 10px;
+  }
+  .container section.about__manage .container__about__manage {
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading {
+    margin-top: -18%;
+    width: 500px;
+  }
+  .container section.about__manage::after {
+    background-position-x: -200px;
+  }
+  .container section.testimonial__manage {
+    padding: 100px 10px;
+  }
+  .container section.testimonial__manage .container__testimonial__manage {
+    width: 100%;
+  }
+  .container section.testimonial__manage .container__testimonial__manage .container__testimonial__manage__slider {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container header {
+    width: 100%;
+    padding: 3% 2%;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container header .container__header button.btn__header {
+    display: none;
+  }
+  .container section.banner__manage {
+    width: 100%;
+    min-height: auto;
+    padding: 0px 10px;
+  }
+  .container section.banner__manage .container__banner__manage {
+    width: 100%;
+    height: auto;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading {
+    width: 90%;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading .text__heading h1 {
+    font-size: 35px;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__img {
+    width: 100%;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__img img {
+    display: block;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .container section.about__manage {
+    padding: 50px 10px;
+  }
+  .container section.about__manage .container__about__manage {
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading {
+    width: 500px;
+    margin-top: -28%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside {
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside span {
+    width: 40px;
+  }
+  .container section.about__manage::after {
+    background-position-y: 50px;
+    background-position-x: -250px;
+  }
+  .container section.testimonial__manage {
+    padding: 50px 0px;
+  }
+  .container section.testimonial__manage .container__testimonial__manage {
+    width: 100%;
+  }
+  .container section.testimonial__manage .container__testimonial__manage .container__testimonial__manage__slider {
+    width: 100%;
+  }
+  .container section.footer__top {
+    width: 100%;
+  }
+  .container section.footer__top .container__footer__top {
+    width: 100%;
+  }
+  .container section.footer {
+    padding: 50px 10px;
+  }
+  .container section.footer .container__footer {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .container {
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container header {
+    width: 100%;
+  }
+  .container header .container__header {
+    width: 100%;
+  }
+  .container header .container__header .logo__manage {
+    margin: 5px 10px;
+  }
+  .container header .container__header .hamburger {
+    width: 30px;
+    height: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    z-index: 300;
+  }
+  .container header .container__header .hamburger span.bar {
+    width: 100%;
+    height: 3px;
+    background-color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header .hamburger.rotate span.bar:first-child {
+    -webkit-transform: rotate(45deg) translate(7px, 7px);
+            transform: rotate(45deg) translate(7px, 7px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  .container header .container__header .hamburger.rotate span.bar:nth-child(2) {
+    opacity: 0;
+    -webkit-transform: translateX(5px);
+            transform: translateX(5px);
+  }
+  .container header .container__header .hamburger.rotate span.bar:last-child {
+    -webkit-transform: rotate(-45deg) translate(6px, -6px);
+            transform: rotate(-45deg) translate(6px, -6px);
+  }
+  .container header .container__header nav.navbar {
+    display: block;
+    width: 300px;
+    height: 80vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    overflow-x: hidden;
+    z-index: 200;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #fff;
+  }
+  .container header .container__header nav.navbar ul.navbar__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    margin-top: 30%;
+  }
+  .container header .container__header nav.navbar.showNav {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-x: hidden;
+  }
+  .container header .container__header button.btn__header {
+    display: none;
+  }
+  .container section.banner__manage {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container section.banner__manage .container__banner__manage {
+    width: 100%;
+    background: url(../images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: -70px;
+    background-position-x: 80px;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading {
+    width: 100%;
+    padding: 30px 10px;
+    margin-top: 0px;
+    position: relative;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading .text__heading {
+    text-align: center;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading .text__heading h1 {
+    font-size: 30px;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading button.btn__heading {
+    margin: 20px auto;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading::after {
+    display: block;
+    content: ' ';
+    position: absolute;
+    right: 0;
+    top: 30%;
+    width: 100%;
+    z-index: -10;
+    height: 350px;
+    background: url(../images/bg-tablet-pattern.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: -30px;
+    background-position-x: 230px;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__img {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    background-size: contain;
+  }
+  .container section.about__manage {
+    padding: 100px 10px;
+    background-image: none;
+  }
+  .container section.about__manage .container__about__manage {
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading {
+    width: 100%;
+    text-align: center;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading .text__about__heading h1 {
+    font-size: 30px;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading .text__about__heading p {
+    margin: 0px auto;
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 10%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside span {
+    position: relative;
+    font-size: 15px;
+    width: 50px;
+    height: 30px;
+    border-radius: 20px;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside span::after {
+    content: ' ';
+    display: block;
+    width: 400px;
+    left: 40px;
+    background-color: #ffefeb;
+    position: absolute;
+    height: 30px;
+    top: 0;
+    z-index: -20;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside h3 {
+    font-size: 0.9rem;
+    margin: 0px 5px;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__list .box__about__manage__list__inside p {
+    width: 100%;
+    margin-left: 0px;
+    font-size: 13px;
+    text-align: unset;
+    margin-top: 5%;
+    line-height: 1.8;
+  }
+  .container section.about__manage::after {
+    display: none;
+  }
+  .container section.testimonial__manage {
+    padding: 50px 0px;
+  }
+  .container section.testimonial__manage .container__testimonial__manage {
+    width: 100%;
+  }
+  .container section.testimonial__manage .container__testimonial__manage h1 {
+    font-size: 35px;
+  }
+  .container section.testimonial__manage .container__testimonial__manage .container__testimonial__manage__slider {
+    width: 100%;
+    margin-top: 20%;
+  }
+  .container section.testimonial__manage .container__testimonial__manage .container__testimonial__manage__slider .swiper-pagination {
+    display: block;
+  }
+  .container section.testimonial__manage .container__testimonial__manage .container__testimonial__manage__slider .swiper-pagination .swiper-pagination-bullet {
+    border: 1px solid #ffefeb;
+    background-color: #f25f3a;
+  }
+  .container section.footer__top {
+    padding: 50px 10px;
+    background-image: url(../images/bg-simplify-section-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .container section.footer__top .container__footer__top {
+    width: 100%;
+  }
+  .container section.footer__top .container__footer__top .row__footer__top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-image: none;
+  }
+  .container section.footer__top .container__footer__top .row__footer__top .box__footer__top {
+    width: 100%;
+    text-align: center;
+  }
+  .container section.footer__top .container__footer__top .row__footer__top button.btn__footer__top {
+    margin-right: 0px;
+  }
+  .container section.footer {
+    padding: 50px 10px;
+  }
+  .container section.footer .container__footer {
+    width: 100%;
+  }
+  .container section.footer .container__footer footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .container section.footer .container__footer .box__footer {
+    margin-top: 10%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .container section.footer .container__footer .box__footer.list__foter {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container section.footer .container__footer .box__footer.list__foter.flex {
+    margin-top: 0px;
+  }
+  .container section.footer .container__footer .box__footer.input {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container section.footer .container__footer .box__footer.input button.btn__footer {
+    display: block;
+    width: 150px;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .container {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .container section.banner__manage {
+    width: 100%;
+    height: auto;
+  }
+  .container section.banner__manage .container__banner__manage {
+    width: 100%;
+  }
+  .container section.banner__manage .container__banner__manage .row__banner__manage .box__banner__heading {
+    width: 100%;
+    margin: -50px 0px;
+  }
+  .container section.about__manage {
+    width: 100%;
+    padding: 50px 10px;
+  }
+  .container section.about__manage .container__about__manage {
+    width: 100%;
+  }
+  .container section.about__manage .container__about__manage .row-about-manage .box__about__manage__heading {
+    margin-top: 20%;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
